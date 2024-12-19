@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+.notification {
+    background-color: black;
+    color: white;
+    padding: 0.7em;
+}
+
+.notification p {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+}
+
+.nav-left {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.submenu{
+    background-color: white;
+    position: absolute;
+    width: 200px ;
+    margin-top: 30px;
+    opacity: 0;
+    z-index: -999;
+    border: 1px solid white;
+}
+
+.nav-left a:hover ul{
+    opacity: 1;
+    z-index: 99;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    margin: 0px 23px;
+}
+
+.nav-right a {
+    color: rgb(203, 200, 200);
+    font-size: 0.9em;
+}
+
+.nav-right a:hover {
+    color: white;
+}
+
+.nav-right a:last-child {
+    color: white;
+}
+
+.nav-left a:hover {
+    color: red;
+}
+
+/* banner-section*/
+
+.banner-section img {
+    width: 100%;
+}
+
+/* trending */
+.trending {
+    padding: 3.6rem;
+
+}
+
+.trending p {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 570;
+}
+
+/* featured section */
+.featured-selection-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.featured-selection {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card div {
+    margin: 10px 0;
+}
+
+.card h4 {
+    text-align: center;
+    margin: 8px 0px;
+    font-weight: 450;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card img:nth-child(2) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.card img:nth-child(2):hover {
+    opacity: 1;
+}
+
+.btn-div {
+
+    padding: 4rem;
+}
+
+.btn-div button {
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    padding: 0.6rem 1.9rem;
+    border: 1px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-div button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+/*footer*/
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 3.5rem 3.5rem 2.5rem 3.5rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    padding-bottom: 8.5rem;
+    column-gap: 1rem;
+}
+
+footer ul li{
+    font-size: 0.89em;
+}
+footer ul li:hover{
+    cursor: pointer;
+    color: rgb(181, 179, 179);
+}
+
+footer div {
+    margin-top: 10px;
+    color: rgb(181, 179, 179);
+    font-size: 0.7rem;
+}
+
+footer div p{
+    cursor: pointer;
+    display: inline;
+}
+footer div p:hover{
+    color: white;
+}
